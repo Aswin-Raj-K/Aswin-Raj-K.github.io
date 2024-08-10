@@ -43,27 +43,8 @@
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -253,7 +234,6 @@
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-soc">SoC</li>
             <li data-filter=".filter-es">Embedded Systems</li>
-            <li data-filter=".filter-pg">Programming</li>
             <li data-filter=".filter-ot">Other</li>
           </ul>
 
@@ -304,13 +284,97 @@
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>F-70 Compressor Monitor</h4>
-                  <p>Designed to monitor F-70 compressors, this device detects errors such as high water temperature, low water flow, and operational status, leveraging the compressor’s Modbus capability.</p>
+                  <p>Designed to monitor F-70 compressors, this device detects errors such as high water temperature, low water flow, and operational status, leveraging the compressor's Modbus capability.</p>
                   <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/RV32I-Processor-Design" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://github.com/Aswin-Raj-K/CompressorStateMonitor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
             </div><!-- End Portfolio Item -->
 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>NIDAQ Python Interface</h4>
+                  <p>The NIDAQ Python Interface offers extended data recording without memory issues by writing data in batches. It also provides real-time control and waveform generation, utilizing multithreading to ensure smooth performance. Additionally, it supports advanced data processing and visualization, making it ideal for research and industrial applications.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/NIDAQInterface" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>FSCV Multi Channel Chip Readout</h4>
+                  <p>The FSCV Multi-Channel Chip Readout Board includes readout pins for 8 FSCV channels and features a microcontroller that manages inputs to the IC under test, controlled by analog switches. It also includes a JTAG connector for programming and communication. The design minimizes user intervention and is suitable for use inside a Faraday cage. Interaction with the board is facilitated by a Python-based GUI using UART communication.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/FSCV-Multi-Channel-Chip-Readout-Board" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>RC5 Encryption and Decryption on FPGA</h4>
+                  <p>Developed and validated the RTL design for RC5-32/12/16 encryption and decryption, with the encryption module implemented in VHDL and the decryption module in Verilog. Simulation results confirmed successful encryption and decryption across all 100 test cases, with detailed outputs displayed in Vivado's Tcl console.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/RC5-Encryption-and-Decryption-on-FPGA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>NIDAQ Based Pressure Reading Interface for Agilent FRG-700/702 Senors</h4>
+                  <p>The GUI provides an intuitive interface for efficiently monitoring pressure readings from multiple Agilent FRG-700/702 sensors. It ensures accurate data collection with flexible options for visualization and export, making it an essential tool for laboratory and industrial applications. Multiple sensor data can be viewed separately or overlaid for comparison in the graph window.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/NIDAQ-Based-Pressure-Reading-Interface-for-Agilent-FRG-700-702" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Pedometer design using STM32F429I</h4>
+                  <p>Successfully designed a Pedometer using the STM32F429I Freedom board, leveraging the onboard I3G4250D gyrometer to capture angular velocity data, which is then used to calculate the distance walked.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/STM32_Pedometer" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Radar Signal Processor on FPGA</h4>
+                  <p>Developed a pulse Doppler radar transmitter on FPGA using Verilog and C++, integrating modules for Windowing, FFT, Matched Filtering, and Clutter Cancellation. This led to a 30% boost in processing efficiency and a 20% increase in precision. The design was verified against MATLAB results, achieving 95% accuracy, with latency reduced by 15% through careful timing and clocking optimization.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/Pulse-Doppler-Radar" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
             
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Real-time Tracking and Detection of Chess Piece Movement</h4>
+                  <p>Developed a chess piece movement detection model which will track and detect chess piece movements and display them on a virtual chess board. Recorded a part of a chess match, and the movements we made on the chessboard are tracked and displayed on the virtual chessboard.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/Chess-Piece-Movement-Detection" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>VMIPS Functional Timing Simulator</h4>
+                  <p>Designed a functional simulator for MIPS instruction set testing without hardware and a timing simulator for realistic performance. The timing simulator's methodology, including fetch/decode, dispatch queue, pipeline, and vector load/store, is detailed in the article. These tools help developers fix assembly code issues before hardware implementation, enhancing development efficiency and reliability.</p>
+                  <a href="assets/project/vmips_simulator.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/VMIPS-Functional-Timing-Simulator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+            
+
 
           </div><!-- End Portfolio Container -->
 
@@ -325,112 +389,83 @@
 
     
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+  <!-- Contact Section -->
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p class="space">Feel free to reach me through LinkedIn or email</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-5">
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>808 57th St. Brooklyn NY 11220</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+1 347 817 0045</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p><a href="mailto:ar7997@nyu.edu">ar7997@nyu.edu</a></p>
               </div>
-            </div><!-- End Info Item -->
-
-          </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <!-- LinkedIn Info Item -->
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/aswin-raj-k-920b71192/" target="_blank">View my LinkedIn profile</a></p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <!-- GitHub Info Item -->
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-github flex-shrink-0"></i>
+              <div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/Aswin-Raj-K" target="_blank">View my GitHub profile</a></p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+  
         </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
       </div>
+  
+    </div>
+  
+  </section><!-- /Contact Section -->
 
-    </section><!-- /Contact Section -->
-
+  
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aswin Raj K</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
-
+  
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

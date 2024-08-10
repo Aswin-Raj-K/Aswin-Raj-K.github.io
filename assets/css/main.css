@@ -726,6 +726,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about.section{
+  padding-bottom: 0px;
+}
+
 .about .container {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -810,6 +814,15 @@ section,
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.resume.section{
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.container.section-title {
+  padding-bottom: 0px;
 }
 
 .resume .resume-item {
@@ -976,7 +989,11 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-
+.portfolio.section{
+  padding-top: 0;
+  width: 100%;
+  padding-bottom: 5px;
+}
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -996,6 +1013,7 @@ section,
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
+
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
@@ -1020,33 +1038,18 @@ section,
 .portfolio .portfolio-item {
   position: relative;
 }
-
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 1;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 20px;
-  z-index: 3;
-  transition: max-height ease 0.3s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
-  padding: 15px;
-  max-height: 100px;
+.portfolio .portfolio-item .img-fluid {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }
+
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  visibility: hidden;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -1070,14 +1073,43 @@ section,
   font-size: 28px;
 }
 
+/* Initial state of .portfolio-info with smooth transitions */
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 1;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 20px;
+  z-index: 3;
+  transition: max-height 0.5s ease;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+  max-height: 100px; /* Start with zero height for smooth hiding */
+  overflow: hidden; /* Hide overflowed content */
+}
+
+/* Styling for the paragraph */
+.portfolio .portfolio-item .portfolio-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hover state: show the .portfolio-info and paragraph */
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  max-height: 300px; /* Adjust to fit the expanded content */
+}
+
 .portfolio .portfolio-item:hover .portfolio-info p {
   opacity: 1;
   visibility: visible;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info{
-  max-height: 300px;
-}
 
 
 
@@ -1091,6 +1123,10 @@ section,
   margin-bottom: 30px;
 }
 
+
+.contact .container .space{
+  margin-bottom: 20px;
+}
 .contact .info-item i {
   font-size: 20px;
   color: var(--accent-color);
