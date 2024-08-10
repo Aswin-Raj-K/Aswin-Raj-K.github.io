@@ -1,118 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aswin Raj K - Portfolio</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
-    <header>
-        <h1>Aswin Raj K</h1>
-        <p>Digital & Embedded System Design Engineer</p>
-    </header>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/cover.jpeg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Aswin Raj K</h2>
+        <p><span class="typed" data-typed-items="Electrical Engineer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Aswin Raj K</span></p>
+                <p><strong>Profile: </strong> <span>Electrical Engineer</span></p>
+                <p><strong>Email: </strong> <span>ar7997@nyu.edu</span></p>
+                <p><strong>Phone: </strong> <span>(347) 817-0045</span></p>
+              </div>
+            </div>
+
+            <!-- <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div> -->
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am an Electrical Engineer with a strong foundation in Digital Design, Embedded System Design, FPGA Design, and PCB Development.
+              </p>
+              <p>
+                I excel in leading projects and mentoring team members, fostering a collaborative environment that drives success. My leadership experience has not only enhanced my technical abilities but also strengthened my communication skills, enabling me to effectively guide projects to completion.
+              </p>
+              <p>
+                Currently, I am actively seeking full-time opportunities in Digital and Embedded System Design, eager to contribute to advancements in electrical engineering with my skills and leadership qualities.
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Journey</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Experience</h3>
+            
+            <div class="resume-item">
+                <h4>Research Scholar</h4>
+                <h3>NYU Nanofab</h3><br>
+                <h5 class="nospace">Aug 2024 - Present</h5>
+                <ul>
+                  <li>Working on the design of TMS for the Nanofab at NYU</li>
+                </ul>
+            </div><!-- Edn Resume Item -->
+
+            
+            <div class="resume-item">
+                <h4>Graduate Research Assistant</h4>
+                <h3>New York University</h3><br>
+                <h5 class="nospace">Sept 2023 - May 2024</h5>
+                <ul>
+                  <li>Developed an IoT device specifically tailored for monitoring the compressor status of a dilution refrigerator.</li>
+                  <li>Designed and verified PCBs with low noise tolerance for testing and verifying Analog ICs with pins over 256, reducing signal interference by 18%.</li>
+                  <li>Reviewed schematics and gained extensive lab experience in designing PCBs, embedded system design, and developing IoT monitoring solutions.</li>
+                  <li>Utilized Python scripting for developing automation scripts for data acquisition, analysis, and data control.</li>
+                  <li>Implemented debugging techniques to troubleshoot hardware and software issues effectively, reducing downtime by 20% and increasing overall system uptime by 10 hours per week.</li>
+              </ul>
+              </div><!-- Edn Resume Item -->
+  
+              <div class="resume-item">
+                  <h4>Avionics and Software Testing Intern</h4>
+                  <h3>Airbus Group India Pvt. Ltd.</h3><br>
+                  <h5 class="nospace">Jun 2021 - Sept 2021</h5>
+                  <ul>
+                      <li>Led the migration of EZFAP from VBA to G-suite, optimizing the tool that supports the FAP development process, reducing processing time by 2 hours per day.</li>
+                      <li>Executed over 100 test cases for avionics software, ensuring compliance with industry standards and improving reliability, leading to a 15% decrease in software errors.</li>
+                      <li>Collaborated with cross-functional teams, honing verbal communication skills and enhancing teamwork.</li>
+                  </ul>
+              </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+                <h4>New York University</h4>
+                <h3>MS in Electrical Engineering</h3><br>
+                <h5>2022 - 2024</h5>
+              </div><!-- Edn Resume Item -->
+  
+              <div class="resume-item pb-0">
+                  <h4>Indian Institute of Technology, Palakkad</h4>
+                  <h3>B.Tech in Electrical Engineering</h3><br>
+                  <h5>2018 - 2022</h5>
+              </div><!-- Edn Resume Item -->
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-soc">SoC</li>
+            <li data-filter=".filter-es">Embedded Systems</li>
+            <li data-filter=".filter-pg">Programming</li>
+            <li data-filter=".filter-ot">Other</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Evaluating High Pass Filters for Mitigating Drift in Neurotransmitter Measurement</h4>
+                <p>This project focuses on assessing high pass filters to address signal drift issues in neurotransmitter measurement systems. By implementing and testing various high pass filter designs, the goal is to enhance the accuracy and stability of neurotransmitter readings, ensuring more reliable and consistent data for neurological studies.</p>
+                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="https://drive.google.com/file/d/1peM_vMAUTiekzrZ3pGC0f7KlIFkrfVQ9/view?usp=sharing" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>SHA-256 ASIC with Advanced Adder Designs </h4>
+                  <p>Contributed to the creation of an open-source ASIC optimized for the SHA-256 hash function used in Bitcoin mining by assisting in the design and verification of the Compression function, achieving GDS-II tape-out readiness, and surpassing DRC/LVS checks through optimized SDC constraints. Utilized an advanced adder design to reduce power consumption by 18%, exceeding the performance benchmarks set in the reference paper.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/SHA-256-ASIC-for-Bitcoin-Mining" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>BIST SRAM Design</h4>
+                  <p>Developed Verilog code for a 256x4b SRAM MBIST, integrated four test algorithms, and optimized timing using Genus tools. BIST enabled fault detection and self-testing without external equipment, reducing costs and improving quality. This approach ensures reliability and real-time monitoring for complex digital systems.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/SRAM-256X4b-BIST" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>RV32I Processor Design</h4>
+                  <p>The goal of this project was to design and implement a RISC-V RV32I processor from scratch, focusing on creating a fully functional and efficient 32-bit RISC-V processor core that adheres to the RV32I instruction set architecture (ISA). The design aims to deliver a robust, scalable processor that can be utilized in various applications and serves as a foundation for further enhancements.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/RV32I-Processor-Design" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>F-70 Compressor Monitor</h4>
+                  <p>Designed to monitor F-70 compressors, this device detects errors such as high water temperature, low water flow, and operational status, leveraging the compressor’s Modbus capability.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="https://github.com/Aswin-Raj-K/RV32I-Processor-Design" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    
+   
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
 
     <div class="container">
-        <!-- About Section -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Passionate about innovative problem-solving with a strong background in analog and digital design, FPGA design, and PCB development.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Embedded System Design</li>
-                <li>Digital Design</li>
-                <li>FPGA Development</li>
-                <li>PCB Design</li>
-                <li>C/C++, Verilog, Python</li>
-                <li>PyQt5</li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>Projects</h2>
-            <p>Here are some of my most notable projects:</p>
-            <ul>
-                <li>32-bit RISC-V Processor Design</li>
-                <li>Pressure Readout Board</li>
-                <li>High-Speed Ethernet MAC Controller</li>
-                <li>GUI for Agilent Inverted Magnetron Pirani Gauge</li>
-            </ul>
-        </section>
-
-        <!-- Timeline Section -->
-        <section class="timeline">
-            <h2>Education & Experience</h2>
-            <div class="timeline-container">
-                <div class="timeline-item left" onclick="showOverlay('Master of Science in Electrical Engineering', 'New York University', '2022 - 2024', 'Focused on Computer Hardware and Analog IC Design.')">
-                    <div class="timeline-content">
-                        <h3>Master of Science in Electrical Engineering</h3>
-                        <h4>New York University</h4>
-                        <p>2022 - 2024</p>
-                    </div>
-                </div>
-                <div class="timeline-item right" onclick="showOverlay('Bachelor of Technology in Electrical Engineering', 'Indian Institute of Technology Palakkad', '2016 - 2020', 'Graduated with a strong foundation in Electrical Engineering principles.')">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Technology in Electrical Engineering</h3>
-                        <h4>Indian Institute of Technology Palakkad</h4>
-                        <p>2016 - 2020</p>
-                    </div>
-                </div>
-                <div class="timeline-item left" onclick="showOverlay('High School', 'SFS Public School, Kerala, India', '2014 - 2016', 'Completed high school with a focus on science and mathematics.')">
-                    <div class="timeline-content">
-                        <h3>High School</h3>
-                        <h4>SFS Public School, Kerala, India</h4>
-                        <p>2014 - 2016</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, please reach out to me via LinkedIn or email:</p>
-            <p>Email: <a href="mailto:ar7997@nyu.edu">ar7997@nyu.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aswin-raj-k-920b71192/" target="_blank">linkedin.com/in/aswin-raj-k-920b71192</a></p>
-        </section>
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aswin Raj K</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
 
-    <div id="overlay" class="overlay" onclick="hideOverlay()">
-        <div class="overlay-content" onclick="event.stopPropagation()">
-            <h3 id="overlay-title"></h3>
-            <h4 id="overlay-subtitle"></h4>
-            <p id="overlay-dates"></p>
-            <p id="overlay-details"></p>
-            <button class="close-btn" onclick="hideOverlay()">Close</button>
-        </div>
-    </div>
+  </footer>
 
-    <script>
-        function showOverlay(title, subtitle, dates, details) {
-            const overlay = document.getElementById('overlay');
-            
-            document.getElementById('overlay-title').innerText = title;
-            document.getElementById('overlay-subtitle').innerText = subtitle;
-            document.getElementById('overlay-dates').innerText = dates;
-            document.getElementById('overlay-details').innerText = details;
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-            overlay.classList.add('show');
-        }
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-        function hideOverlay() {
-            const overlay = document.getElementById('overlay');
-            overlay.classList.remove('show');
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-            setTimeout(() => {
-                if (!overlay.classList.contains('show')) {
-                    overlay.style.display = 'none';
-                }
-            }, 500); 
-        }
-    </script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
