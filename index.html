@@ -3,206 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Reset some default styling */
-        body, h2, h3, h4, p {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        /* Timeline Section */
-        .timeline {
-            width: 100%;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 10px;
-            position: relative;
-        }
-
-        .timeline h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2rem;
-            color: #333;
-        }
-
-        /* Timeline container */
-        .timeline-container {
-            position: relative;
-            padding: 10px 0;
-        }
-
-        .timeline-item {
-            position: relative;
-            width: 50%;
-            padding: 10px;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .timeline-item.left {
-            left: 0;
-        }
-
-        .timeline-item.right {
-            left: 50%;
-        }
-
-        /* The vertical timeline line */
-        .timeline-container::before {
-            content: '';
-            position: absolute;
-            width: 3px;
-            background-color: #ff6f61;
-            top: 0;
-            bottom: 0;
-            left: calc(50% - 1.5px); /* Center the line */
-        }
-
-        /* Circles on the timeline */
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            right: -10.5px;
-            top: calc(50% - 7.5px);
-            background-color: #ff6f61;
-            border: 3px solid #fff;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .timeline-item.right::before {
-            left: -10.5px;
-        }
-
-        .timeline-content {
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        .timeline h3 {
-            font-size: 1.2rem;
-            color: #ff6f61;
-            margin-bottom: 5px;
-        }
-
-        .timeline h4 {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .timeline p {
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        /* Modal overlay */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .overlay.show {
-            display: flex;
-            opacity: 1;
-        }
-
-        .overlay-content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 6px;
-            max-width: 90%;
-            max-height: 90%;
-            overflow-y: auto;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-
-        .close-btn {
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 1rem;
-            margin-top: 15px;
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .timeline-item {
-                width: 100%;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            .timeline-item.left, .timeline-item.right {
-                left: 0;
-            }
-
-            .timeline-item.right::before, .timeline-item.left::before {
-                left: 50%;
-                margin-left: -7.5px;
-            }
-
-            .timeline-container::before {
-                left: 50%;
-            }
-        }
-    </style>
+    <title>Aswin Raj K - Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <section class="timeline">
-        <div class="timeline-container">
-            <div class="timeline-item left" onclick="showOverlay('Master of Science in Electrical Engineering', 'New York University', '2022 - 2024', 'Focused on Computer Hardware and Analog IC Design.')">
-                <div class="timeline-content">
-                    <h3>Master of Science in Electrical Engineering</h3>
-                    <h4>New York University</h4>
-                    <p>2022 - 2024</p>
+    <header>
+        <h1>Aswin Raj K</h1>
+        <p>Digital & Embedded System Design Engineer</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Passionate about innovative problem-solving with a strong background in analog and digital design, FPGA design, and PCB development.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Embedded System Design</li>
+                <li>Digital Design</li>
+                <li>FPGA Development</li>
+                <li>PCB Design</li>
+                <li>C/C++, Verilog, Python</li>
+                <li>PyQt5</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my most notable projects:</p>
+            <ul>
+                <li>32-bit RISC-V Processor Design</li>
+                <li>Pressure Readout Board</li>
+                <li>High-Speed Ethernet MAC Controller</li>
+                <li>GUI for Agilent Inverted Magnetron Pirani Gauge</li>
+            </ul>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline">
+            <h2>Education & Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-item left" onclick="showOverlay('Master of Science in Electrical Engineering', 'New York University', '2022 - 2024', 'Focused on Computer Hardware and Analog IC Design.')">
+                    <div class="timeline-content">
+                        <h3>Master of Science in Electrical Engineering</h3>
+                        <h4>New York University</h4>
+                        <p>2022 - 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" onclick="showOverlay('Bachelor of Technology in Electrical Engineering', 'Indian Institute of Technology Palakkad', '2016 - 2020', 'Graduated with a strong foundation in Electrical Engineering principles.')">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology in Electrical Engineering</h3>
+                        <h4>Indian Institute of Technology Palakkad</h4>
+                        <p>2016 - 2020</p>
+                    </div>
+                </div>
+                <div class="timeline-item left" onclick="showOverlay('High School', 'SFS Public School, Kerala, India', '2014 - 2016', 'Completed high school with a focus on science and mathematics.')">
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <h4>SFS Public School, Kerala, India</h4>
+                        <p>2014 - 2016</p>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item right" onclick="showOverlay('Bachelor of Technology in Electrical Engineering', 'Indian Institute of Technology Palakkad', '2016 - 2020', 'Graduated with a strong foundation in Electrical Engineering principles.')">
-                <div class="timeline-content">
-                    <h3>Bachelor of Technology in Electrical Engineering</h3>
-                    <h4>Indian Institute of Technology Palakkad</h4>
-                    <p>2016 - 2020</p>
-                </div>
-            </div>
-            <div class="timeline-item left" onclick="showOverlay('High School', 'SFS Public School, Kerala, India', '2014 - 2016', 'Completed high school with a focus on science and mathematics.')">
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <h4>SFS Public School, Kerala, India</h4>
-                    <p>2014 - 2016</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please reach out to me via LinkedIn or email:</p>
+            <p>Email: <a href="mailto:ar7997@nyu.edu">ar7997@nyu.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aswin-raj-k-920b71192/" target="_blank">linkedin.com/in/aswin-raj-k-920b71192</a></p>
+        </section>
+    </div>
 
     <div id="overlay" class="overlay" onclick="hideOverlay()">
         <div class="overlay-content" onclick="event.stopPropagation()">
@@ -230,12 +107,11 @@
             const overlay = document.getElementById('overlay');
             overlay.classList.remove('show');
 
-            // Delay setting display to none until the transition is complete
             setTimeout(() => {
                 if (!overlay.classList.contains('show')) {
                     overlay.style.display = 'none';
                 }
-            }, 500); // match this duration to the transition duration
+            }, 500); 
         }
     </script>
 </body>
