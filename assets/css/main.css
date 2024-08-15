@@ -892,6 +892,19 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+.resume .resume-item ul {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.resume .resume-item:hover ul {
+  max-height: 500px; /* Set a value that can fit the largest content */
+  opacity: 1;
+}
+
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
