@@ -1,3 +1,3 @@
 https://aswin-raj-k.github.io/
 
-![](https://komarev.com/ghpvc/?Aswin-Raj-K)
+![](https://komarev.com/ghpvc/?username=Aswin-Raj-K)
