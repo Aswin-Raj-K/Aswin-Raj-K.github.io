@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK3FGSDN1S"></script>
@@ -8,540 +7,603 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-TK3FGSDN1S');
   </script>
 
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon" type="image/png">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- Primary SEO -->
+  <title>Aswin Raj K — Embedded &amp; Digital Design Engineer</title>
+  <meta name="description" content="Aswin Raj K is an Embedded Software Engineer II at Quasistatics specialising in ARM Cortex-M firmware, ASIC design, FPGA, and multi-layer PCB engineering.">
+  <meta name="keywords" content="Aswin Raj K, embedded engineer, firmware, ARM Cortex, ASIC, FPGA, Verilog, RTL, PCB, FreeRTOS, Zephyr, Quasistatics, GDSII, OpenLANE">
+  <meta name="author" content="Aswin Raj K">
+  <link rel="canonical" href="https://aswin-raj-k.github.io/">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://aswin-raj-k.github.io/">
+  <meta property="og:title"       content="Aswin Raj K — Embedded &amp; Digital Design Engineer">
+  <meta property="og:description" content="Embedded firmware, ASIC design, FPGA, and PCB engineering. Currently Embedded SW Engineer II at Quasistatics.">
+  <meta property="og:image"       content="https://aswin-raj-k.github.io/assets/img/profile-img.jpg">
+  <meta property="og:image:alt"   content="Aswin Raj K">
+  <meta property="og:locale"      content="en_US">
+  <meta property="og:site_name"   content="Aswin Raj K">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Aswin Raj K — Embedded &amp; Digital Design Engineer">
+  <meta name="twitter:description" content="Embedded firmware, ASIC design, FPGA, and PCB engineering. Currently Embedded SW Engineer II at Quasistatics.">
+  <meta name="twitter:image"       content="https://aswin-raj-k.github.io/assets/img/profile-img.jpg">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aswin Raj K",
+    "url": "https://aswin-raj-k.github.io/",
+    "image": "https://aswin-raj-k.github.io/assets/img/profile-img.jpg",
+    "jobTitle": "Embedded Software Engineer II",
+    "worksFor": { "@type": "Organization", "name": "Quasistatics Inc." },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "New York University" },
+      { "@type": "CollegeOrUniversity", "name": "IIT Palakkad" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/aswin-raj-k-920b71192/",
+      "https://github.com/Aswin-Raj-K"
+    ],
+    "email": "kaswinraj.k8@gmail.com",
+    "knowsAbout": ["Embedded Firmware","ARM Cortex-M","ASIC Design","FPGA","Verilog","PCB Design","FreeRTOS","Zephyr RTOS"]
+  }
+  </script>
 
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #0a0b0d; color: #e9ebee; font-family: 'IBM Plex Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #f0a05a; color: #0a0b0d; }
+    a { text-decoration: none; }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(95, 208, 138, 0.5); }
+      50% { opacity: .4; box-shadow: 0 0 0 5px rgba(95, 208, 138, 0); }
+    }
+    @keyframes floatGlow {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -24px); }
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @keyframes cardIn {
+      from { transform: translateY(18px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes gridFade {
+      from { transform: translateY(12px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); background: rgba(10,11,13,0.74); border-bottom: 1px solid #1a1d22; }
+    .nav-inner { max-width: 1180px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .nav-logo { display: flex; align-items: center; gap: 13px; }
+    .nav-mark { width: 34px; height: 34px; border: 1px solid #f0a05a; color: #f0a05a; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; border-radius: 7px; flex-shrink: 0; }
+    .nav-name { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #9298a1; }
+    .nav-right { display: flex; align-items: center; gap: 28px; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-link { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.05em; color: #9298a1; transition: color .2s ease; }
+    .nav-link:hover, .nav-link.active { color: #f0a05a; }
+    .nav-status { display: flex; align-items: center; gap: 9px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; color: #9298a1; padding-left: 26px; border-left: 1px solid #1f2228; }
+    .pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: #5fd08a; animation: pulseDot 2.4s infinite; flex-shrink: 0; }
+
+    /* BG */
+    .bg-dots { position: fixed; inset: 0; z-index: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 30px 30px; mask-image: linear-gradient(180deg, transparent, #000 18%, #000 88%, transparent); -webkit-mask-image: linear-gradient(180deg, transparent, #000 18%, #000 88%, transparent); }
+    .bg-glow { position: fixed; top: -180px; right: -120px; width: 560px; height: 560px; z-index: 0; pointer-events: none; background: radial-gradient(circle, rgba(240,160,90,0.16), transparent 62%); filter: blur(20px); animation: floatGlow 14s ease-in-out infinite; }
+
+    main { position: relative; z-index: 1; }
+
+    /* HERO */
+    #hero { scroll-margin-top: 90px; max-width: 1180px; margin: 0 auto; padding: 172px 28px 96px; display: grid; grid-template-columns: 1.28fr 0.86fr; gap: 64px; align-items: center; }
+    .hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.2em; color: #f0a05a; margin-bottom: 26px; display: flex; align-items: center; gap: 14px; }
+    .eyebrow-line { width: 30px; height: 1px; background: #f0a05a; flex-shrink: 0; }
+    .hero-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(48px, 7.4vw, 96px); line-height: 0.97; letter-spacing: -0.035em; margin: 0 0 26px; color: #f4f5f6; }
+    .hero-desc { font-size: 19px; line-height: 1.62; color: #b6bcc4; max-width: 520px; margin: 0 0 32px; font-weight: 300; }
+    .hero-desc em { color: #f0a05a; font-style: normal; font-weight: 400; }
+    .focus-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 38px; }
+    .focus-tag { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.03em; color: #9298a1; border: 1px solid #23262d; border-radius: 6px; padding: 6px 11px; transition: border-color .2s ease, color .2s ease; }
+    .focus-tag:hover { border-color: #f0a05a; color: #e9ebee; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 13px; align-items: center; }
+    .btn-primary { background: #f0a05a; color: #0a0b0d; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; padding: 14px 22px; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; transition: background .2s ease; }
+    .btn-primary:hover { background: #f5b673; }
+    .btn-secondary { color: #e9ebee; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 14px 22px; border: 1px solid #2e323b; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; transition: border-color .2s ease, color .2s ease; }
+    .btn-secondary:hover { border-color: #f0a05a; color: #f0a05a; }
+
+    /* HERO PHOTO */
+    .hero-photo-wrap { position: relative; }
+    .corner { position: absolute; color: #f0a05a; font-family: 'IBM Plex Mono', monospace; font-size: 15px; line-height: 1; z-index: 2; }
+    .corner-tl { top: -9px; left: -9px; }
+    .corner-tr { top: -9px; right: -9px; }
+    .corner-bl { bottom: -9px; left: -9px; }
+    .corner-br { bottom: -9px; right: -9px; }
+    .photo-label { position: absolute; top: -9px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #5a616b; background: #0a0b0d; padding: 0 6px; z-index: 2; }
+    .photo-label-l { left: 14px; }
+    .photo-label-r { right: 14px; }
+    .photo-frame { position: relative; border: 1px solid #2a2e36; border-radius: 11px; overflow: hidden; background: #0d0f12; aspect-ratio: 4/5; }
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.04) contrast(1.02); }
+    .photo-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; color: #cbd0d6; background: linear-gradient(180deg, transparent, rgba(10,11,13,0.92)); }
+    .photo-coord { color: #f0a05a; }
+
+    /* TICKER */
+    #ticker { position: relative; z-index: 1; margin: 40px 0 4px; border-top: 1px solid #15181d; border-bottom: 1px solid #15181d; padding: 17px 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+    .ticker-track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+    .ticker-item { display: inline-flex; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.05em; color: #9298a1; }
+    .ticker-item > span { padding: 0 22px; }
+    .ticker-sep { color: #f0a05a; }
+
+    /* ABOUT */
+    #about { scroll-margin-top: 90px; max-width: 1180px; margin: 0 auto; padding: 78px 28px; border-top: 1px solid #15181d; }
+    .section-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #f0a05a; margin-bottom: 14px; }
+    .section-h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 46px); letter-spacing: -0.02em; margin: 0 0 44px; color: #f2f3f4; }
+    .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; }
+    .about-p { font-size: 17.5px; line-height: 1.75; color: #c2c7ce; margin: 0 0 20px; font-weight: 300; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; }
+    .skill-tag { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.02em; color: #aeb4bc; background: #101216; border: 1px solid #21242b; border-radius: 6px; padding: 8px 13px; transition: border-color .2s ease, color .2s ease, transform .2s ease; }
+    .skill-tag:hover { border-color: #f0a05a; color: #f4f5f6; transform: translateY(-2px); }
+    .facts-box { border: 1px solid #21242b; border-radius: 11px; background: #0e1014; padding: 8px 22px; }
+    .fact-row { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 15px 0; border-bottom: 1px solid #1a1d22; }
+    .fact-row:last-child { border-bottom: none; }
+    .fact-k { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #5a616b; }
+    .fact-v { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: #dfe3e8; text-align: right; }
+
+    /* EXPERIENCE */
+    #experience { scroll-margin-top: 90px; max-width: 1180px; margin: 0 auto; padding: 78px 28px; border-top: 1px solid #15181d; }
+    .timeline { margin-left: 6px; }
+    .tl-item { position: relative; padding-left: 34px; padding-bottom: 42px; border-left: 1px solid #23262d; }
+    .tl-dot { position: absolute; left: -6px; top: 4px; width: 11px; height: 11px; border-radius: 50%; background: #0a0b0d; border: 2px solid #f0a05a; }
+    .tl-dates { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #7c828b; margin-bottom: 9px; }
+    .tl-role { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; margin: 0 0 3px; color: #f2f3f4; }
+    .tl-org { font-size: 14.5px; color: #f0a05a; margin-bottom: 14px; font-weight: 500; }
+    .tl-bullets { display: flex; flex-direction: column; gap: 9px; list-style: none; margin: 0; padding: 0; }
+    .tl-bullet { position: relative; padding-left: 18px; font-size: 15px; line-height: 1.6; color: #aab0b8; font-weight: 300; }
+    .tl-bullet::before { content: '›'; position: absolute; left: 0; top: 0; color: #f0a05a; font-family: 'IBM Plex Mono', monospace; }
+    .edu-sep { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.12em; color: #7c828b; margin: 18px 0; }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .edu-card { border: 1px solid #21242b; border-radius: 11px; background: #0e1014; padding: 24px; transition: border-color .25s ease, transform .25s ease; }
+    .edu-card:hover { border-color: #2e333d; transform: translateY(-3px); }
+    .edu-dates { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #7c828b; margin-bottom: 10px; }
+    .edu-degree { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; margin: 0 0 4px; color: #f2f3f4; }
+    .edu-school { font-size: 14px; color: #aab0b8; }
+
+    /* WORK */
+    #work { scroll-margin-top: 90px; max-width: 1180px; margin: 0 auto; padding: 78px 28px; border-top: 1px solid #15181d; }
+    .work-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 30px; }
+    .work-count { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #7c828b; }
+    .filter-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+    .chip { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; padding: 9px 16px; border-radius: 7px; border: 1px solid #23262d; cursor: pointer; transition: all .2s ease; background: transparent; outline: none; color: #9298a1; }
+    .chip:hover { border-color: #f0a05a; color: #e9ebee; }
+    .chip.active { background: #f0a05a; color: #0a0b0d; border-color: #f0a05a; font-weight: 600; }
+    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+    .proj-card { display: flex; flex-direction: column; border: 1px solid #20242b; border-radius: 11px; overflow: hidden; background: #0e1014; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .proj-card:hover { border-color: #f0a05a; transform: translateY(-4px); box-shadow: 0 20px 44px -22px rgba(240,160,90,0.5); }
+    .proj-img-wrap { position: relative; height: 172px; background: #0a0c0f; overflow: hidden; border-bottom: 1px solid #20242b; }
+    .proj-img { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.92; transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+    .proj-card:hover .proj-img { transform: scale(1.07); }
+    .proj-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,11,13,0.05) 40%, rgba(10,11,13,0.55)); pointer-events: none; }
+    .proj-badge { position: absolute; top: 11px; left: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; border-radius: 5px; padding: 4px 9px; background: rgba(10,11,13,0.82); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+    .proj-num { position: absolute; bottom: 11px; right: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #cbd0d6; background: rgba(10,11,13,0.6); border-radius: 5px; padding: 3px 7px; }
+    .proj-ext { position: absolute; top: 11px; right: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0a0b0d; background: #f0a05a; border-radius: 5px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+    .proj-body { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 11px; flex: 1; }
+    .proj-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px; line-height: 1.25; margin: 0; color: #eef0f2; }
+    .proj-desc { font-size: 13px; line-height: 1.6; color: #8c929b; margin: 0; font-weight: 300; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 4px; }
+    .proj-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.03em; color: #9298a1; border: 1px solid #23262d; border-radius: 5px; padding: 4px 8px; }
+
+    /* CONTACT */
+    #contact { scroll-margin-top: 90px; max-width: 1180px; margin: 0 auto; padding: 90px 28px 96px; border-top: 1px solid #15181d; }
+    .contact-h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 6vw, 72px); letter-spacing: -0.03em; line-height: 1.02; margin: 0 0 22px; color: #f4f5f6; }
+    .contact-desc { font-size: 18px; line-height: 1.6; color: #b6bcc4; max-width: 480px; margin: 0 0 38px; font-weight: 300; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 13px; margin-bottom: 46px; }
+    .contact-meta { display: flex; flex-wrap: wrap; gap: 38px; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: #7c828b; }
+    .meta-key { color: #5a616b; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid #15181d; padding: 30px 28px; }
+    .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #5a616b; }
+
+    /* REVEAL */
+    [data-reveal] { transform: translateY(22px); transition: transform .8s cubic-bezier(.2,.7,.2,1); will-change: transform; }
+    [data-reveal].revealed { transform: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 860px) {
+      #hero { grid-template-columns: 1fr; padding: 120px 20px 60px; gap: 40px; }
+      .hero-photo-wrap { max-width: 280px; margin: 0 auto; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      .edu-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .nav-status { padding-left: 0; border-left: none; }
+      .nav-name { display: none; }
+      .contact-h2 { font-size: clamp(32px, 8vw, 56px); }
+    }
+  </style>
 </head>
+<body>
 
-<body class="index-page">
+  <!-- Scroll progress bar -->
+  <div id="progress-bar" style="position:fixed;top:0;left:0;height:2px;width:0%;background:#f0a05a;z-index:200;transition:width .08s linear;pointer-events:none;"></div>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <div class="bg-dots"></div>
+  <div class="bg-glow"></div>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename"></h1>
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-mark">AR</div>
+        <div class="nav-name">ASWIN&nbsp;RAJ&nbsp;K</div>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#hero"       class="nav-link active" data-nav="hero">Index</a>
+          <a href="#about"      class="nav-link"        data-nav="about">About</a>
+          <a href="#experience" class="nav-link"        data-nav="experience">Experience</a>
+          <a href="#work"       class="nav-link"        data-nav="work">Work</a>
+          <a href="#contact"    class="nav-link"        data-nav="contact">Contact</a>
+        </div>
+        <div class="nav-status">
+          <span class="pulse-dot"></span>
+          EMBEDDED&nbsp;SW&nbsp;ENGINEER&nbsp;II
+        </div>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="main">
+  <main>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/cover.jpeg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>I am Aswin Raj K</h2>
-        <p><span class="typed" data-typed-items="Electrical Engineer, Embedded Systems"></span></p>
+    <!-- HERO -->
+    <section id="hero">
+      <div data-reveal data-rd="0">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>EMBEDDED &amp; DIGITAL DESIGN ENGINEER
+        </div>
+        <h1 class="hero-name">Aswin&nbsp;Raj&nbsp;K</h1>
+        <p class="hero-desc">I build systems from <em>RTL and silicon</em> up through firmware and hardware — embedded firmware, digital &amp; ASIC design, FPGA, and PCB engineering.</p>
+        <div class="focus-tags">
+          <span class="focus-tag">Embedded Firmware</span>
+          <span class="focus-tag">ARM Cortex-M</span>
+          <span class="focus-tag">RTL · Verilog</span>
+          <span class="focus-tag">ASIC · OpenLANE</span>
+          <span class="focus-tag">FPGA</span>
+          <span class="focus-tag">PCB Design</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#work" class="btn-primary">VIEW&nbsp;WORK <span>→</span></a>
+          <a href="AswinRajK_Resume.pdf" target="_blank" rel="noopener" class="btn-secondary">RÉSUMÉ <span>↓</span></a>
+          <a href="#contact" class="btn-secondary">GET&nbsp;IN&nbsp;TOUCH</a>
+        </div>
       </div>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>Aswin Raj K</span></p>
-                <p><strong>Profile: </strong> <span>Electrical Engineer</span></p>
-                <p><strong>Email: </strong> <span>ar7997@nyu.edu</span></p>
-                <p><strong>Phone: </strong> <span>(347) 817-0045</span></p>
-              </div>
-            </div>
-
-            <!-- <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div> -->
-          </div>
-
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>About me</h4>
-              <p>
-                I am an Electrical Engineer with a strong foundation in Digital Design, Embedded System Design, FPGA Design, and PCB Development.
-              </p>
-              <p>
-                I excel in leading projects and mentoring team members, fostering a collaborative environment that drives success. My leadership experience has not only enhanced my technical abilities but also strengthened my communication skills, enabling me to effectively guide projects to completion.
-              </p>
-              <p>
-                Currently, I am actively seeking full-time opportunities in Digital and Embedded System Design, eager to contribute to advancements in electrical engineering with my skills and leadership qualities.
-                </p>
-            </div>
+      <div data-reveal data-rd="140" class="hero-photo-wrap">
+        <span class="corner corner-tl">+</span>
+        <span class="corner corner-tr">+</span>
+        <span class="corner corner-bl">+</span>
+        <span class="corner corner-br">+</span>
+        <div class="photo-label photo-label-l">FIG_01</div>
+        <div class="photo-label photo-label-r">A.RAJ_K</div>
+        <div class="photo-frame">
+          <img src="assets/img/profile-img.jpg" alt="Aswin Raj K">
+          <div class="photo-caption">
+            <span>PORTRAIT // 2025</span>
+            <span class="photo-coord">40.42°N&nbsp;86.91°W</span>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /About Section -->
+    <!-- TICKER -->
+    <div id="ticker">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Journey</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experience</h3>
-            
-            <div class="resume-item">
-                <h4>Research Scholar</h4>
-                <h3>NYU NanoFab</h3><br>
-                <h5 class="nospace">Aug 2024 - Present</h5>
-                <ul>
-                  <li>Engineered a comprehensive tool management system (TMS) for the Nano fabrication room at NYU Tandon, integrating
-                    advanced software and hardware solutions to enhance operational efficiency.</li>
-                  <li>Designed both software and hardware components for the TMS, collaborating with industrial experts to ensure the
-                    system's precision and reliability.</li>
-                  <li>Coordinated closely with industry professionals to tailor the TMS to specific tool requirements, streamlining processes
-                    within the fabrication environment. </li>
-                </ul>
-            </div><!-- Edn Resume Item -->
-
-            
-            <div class="resume-item">
-                <h4>Graduate Research Assistant</h4>
-                <h3>New York University</h3><br>
-                <h5 class="nospace">Sept 2023 - May 2024</h5>
-                <ul>
-                  <li>Developed an IoT device specifically tailored for monitoring the compressor status of a dilution refrigerator.</li>
-                  <li>Designed and verified PCBs with low noise tolerance for testing and verifying Analog ICs with pins over 256, reducing signal interference by 18%.</li>
-                  <li>Reviewed schematics and gained extensive lab experience in designing PCBs, embedded system design, and developing IoT monitoring solutions.</li>
-                  <li>Utilized Python scripting for developing automation scripts for data acquisition, analysis, and data control.</li>
-                  <li>Implemented debugging techniques to troubleshoot hardware and software issues effectively, reducing downtime by 20% and increasing overall system uptime by 10 hours per week.</li>
-              </ul>
-              </div><!-- Edn Resume Item -->
-  
-              <div class="resume-item">
-                  <h4>Avionics and Software Testing Intern</h4>
-                  <h3>Airbus Group India Pvt. Ltd.</h3><br>
-                  <h5 class="nospace">Jun 2021 - Sept 2021</h5>
-                  <ul>
-                      <li>Led the migration of EZFAP from VBA to G-suite, optimizing the tool that supports the FAP development process, reducing processing time by 2 hours per day.</li>
-                      <li>Executed over 100 test cases for avionics software, ensuring compliance with industry standards and improving reliability, leading to a 15% decrease in software errors.</li>
-                      <li>Collaborated with cross-functional teams, honing verbal communication skills and enhancing teamwork.</li>
-                  </ul>
-              </div><!-- Edn Resume Item -->
-
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <h2 data-reveal class="section-h2">Background</h2>
+      <div data-reveal data-rd="80" class="about-grid">
+        <div>
+          <p class="about-p">I'm an engineer working across the full hardware-software stack — embedded firmware, digital &amp; ASIC design, FPGA, and PCB engineering. I'm comfortable going from a Verilog RTL description down to a GDSII tape-out, and back up through RTOS firmware and board bring-up.</p>
+          <p class="about-p">Today I'm an Embedded Software Engineer II at Quasistatics, leading firmware across the company's chip portfolio from pre-silicon to post-silicon validation — ARM Cortex bring-up, RTOS drivers, and wireless audio. I like the part of the job where a hardware problem and a software problem meet.</p>
+          <div class="skills-list">
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">ARM Cortex-M</span>
+            <span class="skill-tag">FreeRTOS · Zephyr</span>
+            <span class="skill-tag">Verilog / RTL</span>
+            <span class="skill-tag">ASIC · OpenLANE</span>
+            <span class="skill-tag">GDSII Tape-out</span>
+            <span class="skill-tag">FPGA · Vivado</span>
+            <span class="skill-tag">Multi-layer PCB</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Modbus · CAN</span>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item pb-0">
-                <h4>New York University</h4>
-                <h3>MS in Electrical Engineering</h3><br>
-                <h5>2022 - 2024</h5>
-              </div><!-- Edn Resume Item -->
-  
-              <div class="resume-item pb-0">
-                  <h4>Indian Institute of Technology, Palakkad</h4>
-                  <h3>B.Tech in Electrical Engineering</h3><br>
-                  <h5>2018 - 2022</h5>
-              </div><!-- Edn Resume Item -->
-
-
-          </div>
-
         </div>
-
+        <div class="facts-box">
+          <div class="fact-row"><span class="fact-k">ROLE</span><span class="fact-v">Embedded SW Engineer II</span></div>
+          <div class="fact-row"><span class="fact-k">AT</span><span class="fact-v">Quasistatics Inc.</span></div>
+          <div class="fact-row"><span class="fact-k">FOCUS</span><span class="fact-v">Firmware · Silicon</span></div>
+          <div class="fact-row"><span class="fact-k">BASED</span><span class="fact-v">West Lafayette, IN</span></div>
+          <div class="fact-row"><span class="fact-k">EMAIL</span><span class="fact-v">kaswinraj.k8@gmail.com</span></div>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Resume Section -->
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-label">02 / EXPERIENCE</div>
+      <h2 data-reveal class="section-h2" style="margin-bottom:48px">Where I've worked</h2>
 
-    
-    
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-soc">SoC</li>
-            <li data-filter=".filter-es">Embedded Systems</li>
-            <li data-filter=".filter-ot">Other</li>
+      <div class="timeline">
+        <div data-reveal class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-dates">JAN 2025 — PRESENT</div>
+          <h3 class="tl-role">Embedded Software Engineer II</h3>
+          <div class="tl-org">Quasistatics Inc.</div>
+          <ul class="tl-bullets">
+            <li class="tl-bullet">Lead firmware across the Quasistatics chip portfolio (QS127/S, QS221–223) from pre-silicon to post-silicon validation — ARM Cortex bring-up, peripheral init and feature development.</li>
+            <li class="tl-bullet">Build firmware on FreeRTOS and Zephyr across Ambiq, Nordic nRF and STM32 SDKs — peripheral drivers, interrupt handling and hardware abstraction layers.</li>
+            <li class="tl-bullet">Own Push-To-Talk firmware end-to-end for WiR demo apps, cutting sidetone latency to 20 ms and resolving 10+ functional and timing bugs.</li>
+            <li class="tl-bullet">Designed a Controlled Bit Error Testing framework for QS127S, lifting baseband validation coverage ~40% and surfacing IC-level encoding/SPI bugs.</li>
           </ul>
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-              <img src="assets/project/msthesis.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Evaluating High Pass Filters for Mitigating Drift in Neurotransmitter Measurement</h4>
-                <p>This project focuses on assessing high pass filters to address signal drift issues in neurotransmitter measurement systems. By implementing and testing various high pass filter designs, the goal is to enhance the accuracy and stability of neurotransmitter readings, ensuring more reliable and consistent data for neurological studies.</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                <a href="https://drive.google.com/file/d/1peM_vMAUTiekzrZ3pGC0f7KlIFkrfVQ9/view?usp=sharing" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-              <img src="assets/project/spm.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>RTL Design of Serial Parallel Multiplier</h4>
-                <p>Designed and verified a serial-parallel multiplier. The module is tested using dataIn.mem, with results analyzed through TCL console outputs and waveforms. The design underwent timing analysis and was converted to GDS format using OpenLane.</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                <a href="https://github.com/Aswin-Raj-K/Serial-Parallel-Multiplier/tree/main" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-                <img src="assets/project/sha256.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>SHA-256 ASIC with Advanced Adder Designs </h4>
-                  <p>Contributed to the creation of an open-source ASIC optimized for the SHA-256 hash function used in Bitcoin mining by assisting in the design and verification of the Compression function, achieving GDS-II tape-out readiness, and surpassing DRC/LVS checks through optimized SDC constraints. Utilized an advanced adder design to reduce power consumption by 18%, exceeding the performance benchmarks set in the reference paper.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/SHA-256-ASIC-for-Bitcoin-Mining" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-                <img src="assets/project/mbist.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>BIST SRAM Design</h4>
-                  <p>Developed Verilog code for a 256x4b SRAM MBIST, integrated four test algorithms, and optimized timing using Genus tools. BIST enabled fault detection and self-testing without external equipment, reducing costs and improving quality. This approach ensures reliability and real-time monitoring for complex digital systems.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/SRAM-256X4b-BIST" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-                <img src="assets/project/riscv.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>RV32I Processor Design</h4>
-                  <p>The goal of this project was to design and implement a RISC-V RV32I processor from scratch, focusing on creating a fully functional and efficient 32-bit RISC-V processor core that adheres to the RV32I instruction set architecture (ISA). The design aims to deliver a robust, scalable processor that can be utilized in various applications and serves as a foundation for further enhancements.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/RV32I-Processor-Design" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
-                <img src="assets/project/compressorMonitor.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>F-70 Compressor Monitor</h4>
-                  <p>Designed to monitor F-70 compressors, this device detects errors such as high water temperature, low water flow, and operational status, leveraging the compressor's Modbus capability.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/CompressorStateMonitor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-                <img src="assets/project/nidaq_interface.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>NIDAQ Python Interface</h4>
-                  <p>The NIDAQ Python Interface offers extended data recording without memory issues by writing data in batches. It also provides real-time control and waveform generation, utilizing multithreading to ensure smooth performance. Additionally, it supports advanced data processing and visualization, making it ideal for research and industrial applications.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/NIDAQInterface" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
-                <img src="assets/project/fscv_readout_board.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>FSCV Multi Channel Chip Readout</h4>
-                  <p>The FSCV Multi-Channel Chip Readout Board includes readout pins for 8 FSCV channels and features a microcontroller that manages inputs to the IC under test, controlled by analog switches. It also includes a JTAG connector for programming and communication. The design minimizes user intervention and is suitable for use inside a Faraday cage. Interaction with the board is facilitated by a Python-based GUI using UART communication.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/FSCV-Multi-Channel-Chip-Readout-Board" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-                <img src="assets/project/rc5_encry_decry.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>RC5 Encryption and Decryption on FPGA</h4>
-                  <p>Developed and validated the RTL design for RC5-32/12/16 encryption and decryption, with the encryption module implemented in VHDL and the decryption module in Verilog. Simulation results confirmed successful encryption and decryption across all 100 test cases, with detailed outputs displayed in Vivado's Tcl console.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/RC5-Encryption-and-Decryption-on-FPGA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-                <img src="assets/project/nidaq_pressure_reader.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>NIDAQ Based Pressure Reading Interface for Agilent FRG-700/702 Senors</h4>
-                  <p>The GUI provides an intuitive interface for efficiently monitoring pressure readings from multiple Agilent FRG-700/702 sensors. It ensures accurate data collection with flexible options for visualization and export, making it an essential tool for laboratory and industrial applications. Multiple sensor data can be viewed separately or overlaid for comparison in the graph window.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/NIDAQ-Based-Pressure-Reading-Interface-for-Agilent-FRG-700-702" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
-                <img src="assets/project/pedometer.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Pedometer design using STM32F429I</h4>
-                  <p>Successfully designed a Pedometer using the STM32F429I Freedom board, leveraging the onboard I3G4250D gyrometer to capture angular velocity data, which is then used to calculate the distance walked.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/STM32_Pedometer" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soc">
-                <img src="assets/project/pulseDoppler.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Radar Signal Processor on FPGA</h4>
-                  <p>Developed a pulse Doppler radar transmitter on FPGA using Verilog and C++, integrating modules for Windowing, FFT, Matched Filtering, and Clutter Cancellation. This led to a 30% boost in processing efficiency and a 20% increase in precision. The design was verified against MATLAB results, achieving 95% accuracy, with latency reduced by 15% through careful timing and clocking optimization.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/Pulse-Doppler-Radar" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-                <img src="assets/project/chessMovementDetection.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Real-time Tracking and Detection of Chess Piece Movement</h4>
-                  <p>Developed a chess piece movement detection model which will track and detect chess piece movements and display them on a virtual chess board. Recorded a part of a chess match, and the movements we made on the chessboard are tracked and displayed on the virtual chessboard.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/Chess-Piece-Movement-Detection" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-                <img src="assets/project/vmips_simulator.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>VMIPS Functional Timing Simulator</h4>
-                  <p>Designed a functional simulator for MIPS instruction set testing without hardware and a timing simulator for realistic performance. The timing simulator's methodology, including fetch/decode, dispatch queue, pipeline, and vector load/store, is detailed in the article. These tools help developers fix assembly code issues before hardware implementation, enhancing development efficiency and reliability.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/VMIPS-Functional-Timing-Simulator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-es">
-                <img src="assets/project/pressure_reader.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Pressure Readout Board for Agilent FRG-700/702 using Pico Board</h4>
-                  <p>Designed a Pressure Readout Board specifically for Agilent FRG-700/702 sensors, featuring an LED display for real-time pressure readings and a detent mechanism to rotate the RJ45 connector for optimal LCD orientation. The board also includes a custom GUI application for data analysis via USB connection. The repository provides hardware design files, firmware, and software components to support both the board’s functionality and its integration with the custom application.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/Pressure-Readout-Board-for-Agilent-FRG-700-702-using-Pico-Board" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-                <img src="assets/project/augmented_reality.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Basic Augmented Reality using Python</h4>
-                  <p>This project uses ArUco markers to create a simple augmented reality (AR) experience. ArUco markers, developed in 2014, are binary fiducial markers that help accurately integrate virtual objects with the real world. By employing OpenCV and Numpy libraries, the project combines real and virtual elements in real-time, enhancing interactive experiences through visual and spatial alignment.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                  <a href="https://github.com/Aswin-Raj-K/https://github.com/Aswin-Raj-K/Basic-Augmented-Reality-Using-Python?tab=readme-ov-file" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ot">
-              <img src="assets/project/sha256Python.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SHA256 Algorithm Python Implementation</h4>
-                <p>A straightforward implementation of the SHA-256 hashing algorithm in Python. SHA-256 is a member of the SHA-2 family, known for its cryptographic security and use in various applications such as data integrity verification and digital signatures.</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                <a href="https://github.com/Aswin-Raj-K/SHA256-Algorithm-Python" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-          </div><!-- End Portfolio Item -->
-            
-
-
-          </div><!-- End Portfolio Container -->
-
         </div>
 
-      </div>
+        <div data-reveal class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-dates">AUG 2024 — DEC 2024</div>
+          <h3 class="tl-role">Research Scholar</h3>
+          <div class="tl-org">NYU NanoFab</div>
+          <ul class="tl-bullets">
+            <li class="tl-bullet">Engineered a centralized tool-management system monitoring critical status signals for 4 cleanroom tools, improving uptime reporting accuracy by 25%.</li>
+            <li class="tl-bullet">Built a Python telemetry server over Modbus TCP/IP and CAN Bus, plus custom C++ firmware for 4 IoT device types acquiring data at 10 Hz.</li>
+            <li class="tl-bullet">Deployed a remote monitoring GUI in Python, cutting the need for manual equipment checks.</li>
+          </ul>
+        </div>
 
-    </section><!-- /Portfolio Section -->
+        <div data-reveal class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-dates">SEP 2023 — MAY 2024</div>
+          <h3 class="tl-role">ECE Graduate Assistant</h3>
+          <div class="tl-org">NYU Nano Electronics Lab</div>
+          <ul class="tl-bullets">
+            <li class="tl-bullet">Developed an IoT device for real-time compressor monitoring in dilution refrigerators, enabling proactive fault detection.</li>
+            <li class="tl-bullet">Designed and verified multi-layer PCBs (256+ pins) for analog IC test, reducing signal interference by 18%.</li>
+            <li class="tl-bullet">Automated data pipelines in Python with multithreading, cutting downtime 20% and recovering 10+ hrs of uptime per week.</li>
+          </ul>
+        </div>
 
-    
-   
-
-    
-
-  <!-- Contact Section -->
-<section id="contact" class="contact section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p class="space">Feel free to reach me through LinkedIn or email</p>
-    </div><!-- End Section Title -->
-  
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-      <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-        <div class="row gy-5">
-  
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Brooklyn NY 11220</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-  
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Me</h3>
-                <p>+1 347 817 0045</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-  
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Me</h3>
-                <p><a href="mailto:ar7997@nyu.edu">ar7997@nyu.edu</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-  
-          <!-- LinkedIn Info Item -->
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
-              <i class="bi bi-linkedin flex-shrink-0"></i>
-              <div>
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/aswin-raj-k-920b71192/" target="_blank">View my LinkedIn profile</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-  
-          <!-- GitHub Info Item -->
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
-              <i class="bi bi-github flex-shrink-0"></i>
-              <div>
-                <h3>GitHub</h3>
-                <p><a href="https://github.com/Aswin-Raj-K" target="_blank">View my GitHub profile</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-  
+        <div data-reveal class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-dates">JUN 2021 — SEP 2021</div>
+          <h3 class="tl-role">Avionics &amp; Software Testing Intern</h3>
+          <div class="tl-org">Airbus Group India</div>
+          <ul class="tl-bullets">
+            <li class="tl-bullet">Led migration of EZFAP from VBA to G-Suite, cutting daily processing time by 2 hours — a 25%+ productivity gain.</li>
+            <li class="tl-bullet">Executed 100+ avionics test cases for standards compliance, reducing software errors by 15%.</li>
+          </ul>
         </div>
       </div>
-  
-    </div>
-  
-  </section><!-- /Contact Section -->
 
-  
+      <div class="edu-sep">— EDUCATION</div>
+      <div data-reveal class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-dates">2022 — 2024 · GPA 3.9 / 4</div>
+          <h3 class="edu-degree">MS, Electrical Engineering</h3>
+          <div class="edu-school">New York University</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-dates">2018 — 2022 · GPA 8.98 / 10</div>
+          <h3 class="edu-degree">BTech, Electrical Engineering</h3>
+          <div class="edu-school">IIT Palakkad</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div data-reveal class="work-header">
+        <div>
+          <div class="section-label">03 / SELECTED WORK</div>
+          <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(30px,4vw,46px);letter-spacing:-0.02em;margin:0;color:#f2f3f4;">Projects</h2>
+        </div>
+        <div class="work-count" id="workCount"></div>
+      </div>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="soc">SoC · ASIC</button>
+        <button class="chip" data-filter="fpga">FPGA</button>
+        <button class="chip" data-filter="embedded">Embedded</button>
+        <button class="chip" data-filter="software">Software</button>
+      </div>
+      <div class="proj-grid" id="projGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-label">04 / CONTACT</div>
+      <h2 data-reveal class="contact-h2">Let's build<br>something.</h2>
+      <p class="contact-desc">Always happy to talk firmware, silicon, and hardware. Reach me by email, on LinkedIn, or grab my résumé.</p>
+      <div data-reveal data-rd="80" class="contact-links">
+        <a href="mailto:kaswinraj.k8@gmail.com" class="btn-primary">kaswinraj.k8@gmail.com</a>
+        <a href="AswinRajK_Resume.pdf" target="_blank" rel="noopener" class="btn-secondary">RÉSUMÉ&nbsp;↓</a>
+        <a href="https://www.linkedin.com/in/aswin-raj-k-920b71192/" target="_blank" rel="noopener" class="btn-secondary">LINKEDIN&nbsp;↗</a>
+        <a href="https://github.com/Aswin-Raj-K" target="_blank" rel="noopener" class="btn-secondary">GITHUB&nbsp;↗</a>
+      </div>
+      <div class="contact-meta">
+        <div><span class="meta-key">LOC</span>&nbsp;&nbsp;West Lafayette, IN 47906</div>
+        <div><span class="meta-key">TEL</span>&nbsp;&nbsp;+1 347 817 0045</div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span>ASWIN RAJ K — EMBEDDED &amp; DIGITAL DESIGN ENGINEER</span>
+        <span>© 2026 · WEST LAFAYETTE, IN · 40.42°N 86.91°W</span>
+      </div>
+    </footer>
+
   </main>
 
-  
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    // ─── Data ────────────────────────────────────────────────────────────────
+    var P = 'assets/project/';
+    var PROJECTS = [
+      { img: P+'sha256.png',               cat:'soc',      title:'SHA-256 ASIC',                   tags:['ASIC','GDSII','Tape-out'],           link:'https://github.com/Aswin-Raj-K/SHA-256-ASIC-for-Bitcoin-Mining',                                                              desc:'Open-source SHA-256 ASIC for Bitcoin mining — compression-unit design, DRC/LVS clean and GDSII tape-out ready, with 18% lower power via an optimized adder.' },
+      { img: P+'riscv.png',                cat:'soc',      title:'RV32I Processor',                 tags:['RISC-V','RTL','CPU Core'],           link:'https://github.com/Aswin-Raj-K/RV32I-Processor-Design',                                                                       desc:'A 32-bit RISC-V RV32I processor core built from scratch — fully functional, scalable, and a foundation for further ISA extensions.' },
+      { img: P+'spm.png',                  cat:'soc',      title:'Serial-Parallel Multiplier',      tags:['RTL','OpenLane','GDS'],              link:'https://github.com/Aswin-Raj-K/Serial-Parallel-Multiplier/tree/main',                                                          desc:'Serial-parallel multiplier in RTL, verified via testbench and waveforms, timing-analyzed and pushed to GDS with OpenLane.' },
+      { img: P+'mbist.png',                cat:'soc',      title:'BIST SRAM — 256×4b',             tags:['Verilog','MBIST','Genus'],           link:'https://github.com/Aswin-Raj-K/SRAM-256X4b-BIST',                                                                            desc:'256×4b SRAM with built-in self-test — four test algorithms in Verilog, timing-optimized in Genus for fault detection without external equipment.' },
+      { img: P+'rc5_encry_decry.png',      cat:'fpga',     title:'RC5 Encryption on FPGA',         tags:['VHDL','Verilog','Vivado'],           link:'https://github.com/Aswin-Raj-K/RC5-Encryption-and-Decryption-on-FPGA',                                                        desc:'RC5-32/12/16 encryption and decryption on FPGA — VHDL encrypt, Verilog decrypt, verified across all 100 test cases in Vivado.' },
+      { img: P+'pulseDoppler.png',         cat:'fpga',     title:'Radar Signal Processor',         tags:['FFT','FPGA','C++'],                  link:'https://github.com/Aswin-Raj-K/Pulse-Doppler-Radar',                                                                          desc:'Pulse-Doppler radar transmitter on FPGA — windowing, FFT, matched filtering and clutter cancellation; 95% match to MATLAB and 30% faster.' },
+      { img: P+'fscv_readout_board.png',   cat:'embedded', title:'FSCV Multi-Channel Readout',     tags:['PCB','UART','MCU'],                  link:'https://github.com/Aswin-Raj-K/FSCV-Multi-Channel-Chip-Readout-Board',                                                        desc:'8-channel FSCV chip readout board with onboard MCU, analog switches, JTAG and a Python UART GUI — built for use inside a Faraday cage.' },
+      { img: P+'compressorMonitor.png',    cat:'embedded', title:'F-70 Compressor Monitor',        tags:['Modbus','IoT','Firmware'],           link:'https://github.com/Aswin-Raj-K/CompressorStateMonitor',                                                                       desc:'F-70 compressor monitor reading water temperature, flow and operational status over Modbus to flag faults in real time.' },
+      { img: P+'pressure_reader.png',      cat:'embedded', title:'Pressure Readout Board (Pico)',  tags:['RP2040','PCB','GUI'],                link:'https://github.com/Aswin-Raj-K/Pressure-Readout-Board-for-Agilent-FRG-700-702-using-Pico-Board',                              desc:'RP2040 pressure readout board for Agilent FRG-700/702 — LED display, rotatable RJ45 and a custom USB GUI for data analysis.' },
+      { img: P+'pedometer.png',            cat:'embedded', title:'STM32 Pedometer',                tags:['STM32','Gyro','C'],                  link:'https://github.com/Aswin-Raj-K/STM32_Pedometer',                                                                              desc:'STM32F429I pedometer using the onboard I3G4250D gyroscope to compute distance walked from angular-velocity data.' },
+      { img: P+'msthesis.png',             cat:'embedded', title:'High-Pass Filters for Neuro Drift', tags:['Analog','Measurement','MS Thesis'], link:'https://drive.google.com/file/d/1peM_vMAUTiekzrZ3pGC0f7KlIFkrfVQ9/view?usp=sharing',                                       desc:'MS thesis evaluating high-pass filter designs to mitigate signal drift in neurotransmitter measurement for more reliable neuro data.' },
+      { img: P+'nidaq_interface.png',      cat:'software', title:'NIDAQ Python Interface',         tags:['Python','Threading','DAQ'],          link:'https://github.com/Aswin-Raj-K/NIDAQInterface',                                                                               desc:'Python NIDAQ interface with batched recording, real-time control, multithreaded waveform generation and live visualization.' },
+      { img: P+'nidaq_pressure_reader.png',cat:'software', title:'NIDAQ Pressure Interface',       tags:['Python','GUI','Sensors'],            link:'https://github.com/Aswin-Raj-K/NIDAQ-Based-Pressure-Reading-Interface-for-Agilent-FRG-700-702',                              desc:'Python GUI for monitoring multiple Agilent FRG-700/702 sensors, with overlayed comparison graphs and flexible export.' },
+      { img: P+'vmips_simulator.png',      cat:'software', title:'VMIPS Timing Simulator',         tags:['C++','Architecture','MIPS'],         link:'https://github.com/Aswin-Raj-K/VMIPS-Functional-Timing-Simulator',                                                            desc:'Functional and timing simulator for the VMIPS vector ISA — fetch/decode, dispatch queues, pipeline and vector load/store modeling.' },
+      { img: P+'chessMovementDetection.png',cat:'software',title:'Chess Movement Detection',       tags:['OpenCV','CV','Tracking'],            link:'https://github.com/Aswin-Raj-K/Chess-Piece-Movement-Detection',                                                               desc:'Real-time chess-piece tracking from match video, mirrored onto a virtual board using OpenCV.' },
+      { img: P+'augmented_reality.png',    cat:'software', title:'Augmented Reality (ArUco)',      tags:['OpenCV','ArUco','Python'],           link:'https://github.com/Aswin-Raj-K/Basic-Augmented-Reality-Using-Python',                                                         desc:'Marker-based augmented reality with ArUco fiducials, blending virtual objects into the real scene in real time via OpenCV.' },
+      { img: P+'sha256Python.png',         cat:'software', title:'SHA-256 in Python',              tags:['Python','Crypto'],                   link:'https://github.com/Aswin-Raj-K/SHA256-Algorithm-Python',                                                                      desc:'A clean, from-scratch implementation of the SHA-256 hashing algorithm in Python.' },
+    ];
+    var CAT_META = {
+      soc:      { label:'SoC · ASIC', color:'#f0a05a' },
+      fpga:     { label:'FPGA',       color:'#5fd08a' },
+      embedded: { label:'EMBEDDED',   color:'#6ab7f0' },
+      software: { label:'SOFTWARE',   color:'#c08af0' },
+    };
+    var TECH_LIST = ['C / C++','ARM Cortex-M','FreeRTOS','Zephyr RTOS','Verilog','OpenLANE','GDSII','FPGA','Vivado','Multi-layer PCB','Modbus','CAN Bus','Python','RISC-V','STM32','Nordic nRF','Ambiq'];
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    // ─── Ticker ──────────────────────────────────────────────────────────────
+    (function() {
+      var doubled = TECH_LIST.concat(TECH_LIST);
+      var track = document.getElementById('tickerTrack');
+      doubled.forEach(function(t) {
+        var span = document.createElement('span');
+        span.className = 'ticker-item';
+        span.innerHTML = '<span>' + t + '</span><span class="ticker-sep">/</span>';
+        track.appendChild(span);
+      });
+    })();
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    // ─── Project grid ────────────────────────────────────────────────────────
+    function renderProjects(filter) {
+      var grid = document.getElementById('projGrid');
+      var countEl = document.getElementById('workCount');
+      var list = filter === 'all' ? PROJECTS : PROJECTS.filter(function(p) { return p.cat === filter; });
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+      grid.style.animation = 'none';
+      void grid.offsetWidth;
+      grid.style.animation = 'gridFade .5s cubic-bezier(.2,.7,.2,1) both';
+
+      grid.innerHTML = '';
+      list.forEach(function(p, i) {
+        var m = CAT_META[p.cat] || { label: p.cat.toUpperCase(), color: '#9298a1' };
+        var a = document.createElement('a');
+        a.href = p.link;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = 'proj-card';
+        a.style.animation = 'cardIn .5s cubic-bezier(.2,.7,.2,1) ' + (i * 55) + 'ms both';
+        a.innerHTML =
+          '<div class="proj-img-wrap">' +
+            '<div class="proj-img" style="background-image:url(\'' + p.img + '\')"></div>' +
+            '<div class="proj-overlay"></div>' +
+            '<span class="proj-badge" style="color:' + m.color + ';border:1px solid ' + m.color + '55">' + m.label + '</span>' +
+            '<span class="proj-num">P' + String(i + 1).padStart(2, '0') + '</span>' +
+            '<span class="proj-ext">↗</span>' +
+          '</div>' +
+          '<div class="proj-body">' +
+            '<h3 class="proj-title">' + p.title + '</h3>' +
+            '<p class="proj-desc">' + p.desc + '</p>' +
+            '<div class="proj-tags">' + p.tags.map(function(t) { return '<span class="proj-tag">' + t + '</span>'; }).join('') + '</div>' +
+          '</div>';
+        grid.appendChild(a);
+      });
+      countEl.textContent = '[ ' + list.length + ' / ' + PROJECTS.length + ' ] SHOWN';
+    }
+    renderProjects('all');
+
+    document.getElementById('filterChips').addEventListener('click', function(e) {
+      var btn = e.target.closest('.chip');
+      if (!btn) return;
+      document.querySelectorAll('.chip').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      renderProjects(btn.getAttribute('data-filter'));
+    });
+
+    // ─── Scroll spy ──────────────────────────────────────────────────────────
+    var NAV_IDS = ['hero', 'about', 'experience', 'work', 'contact'];
+    function updateScrollSpy() {
+      var mid = window.innerHeight * 0.42;
+      var cur = 'hero';
+      NAV_IDS.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= mid) cur = id;
+      });
+      document.querySelectorAll('.nav-link').forEach(function(a) {
+        a.classList.toggle('active', a.getAttribute('data-nav') === cur);
+      });
+    }
+    window.addEventListener('scroll', updateScrollSpy, { passive: true });
+    requestAnimationFrame(updateScrollSpy);
+
+    // ─── Scroll progress bar ─────────────────────────────────────────────────
+    var progressBar = document.getElementById('progress-bar');
+    function updateProgress() {
+      var doc = document.documentElement;
+      var scrolled = doc.scrollTop || document.body.scrollTop;
+      var total = doc.scrollHeight - doc.clientHeight;
+      progressBar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+
+    // ─── Scroll reveal ───────────────────────────────────────────────────────
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
+    function checkReveal() {
+      var h = window.innerHeight;
+      revealEls.forEach(function(el) {
+        if (el.__shown) return;
+        var r = el.getBoundingClientRect();
+        if (r.top < h * 0.92 && r.bottom > -40) {
+          el.__shown = true;
+          var d = parseInt(el.getAttribute('data-rd') || '0', 10);
+          setTimeout(function() { el.classList.add('revealed'); }, d);
+        }
+      });
+    }
+    if (!reduced) {
+      window.addEventListener('scroll', checkReveal, { passive: true });
+      window.addEventListener('resize', checkReveal);
+      requestAnimationFrame(function() { checkReveal(); requestAnimationFrame(checkReveal); });
+      setTimeout(function() { revealEls.forEach(function(el) { if (!el.__shown) { el.__shown = true; el.classList.add('revealed'); } }); }, 2800);
+    } else {
+      revealEls.forEach(function(el) { el.classList.add('revealed'); });
+    }
+
+  </script>
 
 </body>
-
 </html>

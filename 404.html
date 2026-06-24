@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Aswin Raj K</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body { background: #0a0b0d; color: #e9ebee; font-family: 'IBM Plex Mono', monospace; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+
+    @keyframes floatGlow {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -24px); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .bg-dots { position: fixed; inset: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 30px 30px; mask-image: linear-gradient(180deg, transparent, #000 18%, #000 88%, transparent); -webkit-mask-image: linear-gradient(180deg, transparent, #000 18%, #000 88%, transparent); }
+    .bg-glow { position: fixed; top: -180px; right: -120px; width: 560px; height: 560px; pointer-events: none; background: radial-gradient(circle, rgba(240,160,90,0.16), transparent 62%); filter: blur(20px); animation: floatGlow 14s ease-in-out infinite; }
+
+    .card {
+      position: relative; z-index: 1;
+      text-align: center;
+      animation: fadeUp .7s cubic-bezier(.2,.7,.2,1) both;
+      padding: 0 24px;
+    }
+    .code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(96px, 20vw, 180px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: #f4f5f6;
+      margin: 0;
+    }
+    .code span { color: #f0a05a; }
+    .label {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      color: #5a616b;
+      margin: 18px 0 10px;
+    }
+    .message {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      color: #7c828b;
+      margin: 0 0 40px;
+      line-height: 1.7;
+    }
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #f0a05a;
+      color: #0a0b0d;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .2s ease;
+    }
+    .home-link:hover { background: #f5b673; }
+    .coords {
+      margin-top: 48px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: #2e333b;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-dots"></div>
+  <div class="bg-glow"></div>
+
+  <div class="card">
+    <p class="code">4<span>0</span>4</p>
+    <p class="label">PAGE NOT FOUND</p>
+    <p class="message">This signal got lost somewhere between<br>RTL and silicon. Let's get you back.</p>
+    <a href="/" class="home-link">← BACK TO HOME</a>
+    <p class="coords">40.42°N 86.91°W</p>
+  </div>
+</body>
+</html>
